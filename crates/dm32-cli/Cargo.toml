@@ -1,0 +1,16 @@
+[package]
+name = "dm32-cli"
+description = "Command-line programmer for the Baofeng DM-32UV"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "dm32"
+path = "src/main.rs"
+
+[dependencies]
+dm32-proto.workspace = true
+dm32-codeplug.workspace = true
+anyhow.workspace = true
+clap.workspace = true

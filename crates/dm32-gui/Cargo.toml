@@ -1,0 +1,19 @@
+[package]
+name = "dm32-gui"
+description = "Graphical CPS for the Baofeng DM-32UV"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "dm32cps"
+path = "src/main.rs"
+
+[dependencies]
+dm32-proto.workspace = true
+dm32-codeplug.workspace = true
+eframe = { version = "0.36", default-features = false, features = ["default_fonts", "glow", "wayland", "x11", "persistence"] }
+egui_extras = { version = "0.36" }
+serde.workspace = true
+egui-file-dialog = { version = "0.15", default-features = false }
+getrandom = "0.3"

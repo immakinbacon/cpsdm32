@@ -1,0 +1,12 @@
+[package]
+name = "dm32-codeplug"
+description = "Codeplug model for the Baofeng DM-32UV"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+thiserror.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+dm32-proto.workspace = true

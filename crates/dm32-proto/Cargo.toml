@@ -1,0 +1,10 @@
+[package]
+name = "dm32-proto"
+description = "Serial programming protocol for the Baofeng DM-32UV"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+thiserror.workspace = true
+serialport.workspace = true
